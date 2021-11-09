@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1632242491 source:c:\users\acer\desktop\szemely\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1632242816 source:c:\users\acer\desktop\nb_2.5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
