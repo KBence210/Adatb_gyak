@@ -1,6 +1,6 @@
-create database dchcas_9_2;
+create database h5beu4;
 
-use dchcas_9_2;
+use h5beu4;
 
 create table tanfolyam(
 	tkod INT,
