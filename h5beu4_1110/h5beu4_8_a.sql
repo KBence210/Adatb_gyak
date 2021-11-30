@@ -1,6 +1,6 @@
-create database dchcas_8a;
+create database h5beu4_8a;
 
-use dchcas_8a;
+use h5beu4_8a;
 
 create table tulajdonos(
 	tkod INT(3) PRIMARY KEY,
