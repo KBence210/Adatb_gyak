@@ -1,6 +1,6 @@
-create database dchcas_8;
+create database h5beu4;
 
-use dchcas_8;
+use h5beu4;
 
 create table gyarto(
 	adoszam INT PRIMARY KEY,
