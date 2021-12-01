@@ -1,0 +1,31 @@
+Create table tárgy(
+	kód int primary key,
+    kredit int check(kredit>0),
+    megnevezés varchar(50)
+);
+
+create table oktató(
+	neptunkód char(6) primary key,
+    név varchar(30),
+    tanszék varchar(50),
+	kód int,foreign key(kód) references tárgy(kód)
+);
+
+create table hallgató(
+	neptunkód char(6) primary key,
+    név varchar(30),
+    tankör varchar(50),
+    szül.id int,
+    életkor int not null,
+    irsz int not null,
+    város varchar(40),
+    utca varchar(50),
+    hsz int
+);
+
+create table hallgat(
+	félév int,
+    vizsgajegy int,
+    kód int,foreign key(kód) references tárgy(kód),
+    neptunkód char(6),foreign key(neptunkód) references hallgató(neptunkód)
+);

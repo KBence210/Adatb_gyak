@@ -1,0 +1,20 @@
+insert into tárgy values(101,3,'Algebra');
+insert into tárgy values(102,5,'Gépkezelés');
+insert into tárgy values(103,4,'Fizika');
+insert into tárgy values(104,5,'Anyagismeret');
+insert into tárgy values(105,0,'idegen nyelv 1');
+insert into tárgy values(106,0,'idegen nyelv 2');
+insert into tárgy values(107,5,'Számítógép architektúra');
+insert into tárgy values(108,2,'Fizika történet');
+
+insert into oktató values('abc123','Lakatos Zsigmond','Informatika tanszék',107);
+insert into oktató values('h2k4ll','Szabó Nikolett','Idegen nyelv tanszék',105);
+insert into oktató values('lt86zp','Kovács Zoltán','Matematika tanszék',101);
+insert into oktató values('wer56p', 'Nagy Béla','Idegen nyelv tanszék',106);
+insert into oktató values('qwc22b','Tihamér Ottó','Fizika tanszék',108);
+insert into oktató values('fgej12','Lámi Dániel','Anyagismeret tanszék',104);
+insert into oktató values('qwc22b','Tihamér Ottó','Fizika Tanszék',103);
+
+insert into hallgató values('deg34h','Nagy Zoltán','Ge-fit01',1998,23,1100,'Budapest','Ady Endre út 3',13);
+insert into hallgató values('akjl16','Szabó Kristóf','Ge-Bi02',2000,21,3120,'Miskolc','Petõfi utca 6',15);
+insert into hallgató values('lap123','Kovács Lajos','Gt-De03',2001,20,3500,'Salgótarján','Kis utca 3',10);
