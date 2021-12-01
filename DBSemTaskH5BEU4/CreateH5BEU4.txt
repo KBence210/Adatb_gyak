@@ -1,0 +1,38 @@
+create database h5beu4;
+
+use h5beu4;
+
+CREATE TABLE Felhasznalo (
+    felhasznalo_nev VARCHAR(30) PRIMARY KEY,
+    igazi_nev VARCHAR(30),
+    email_cim VARCHAR(30),
+    telefonszam INT(10)
+);
+
+CREATE TABLE Karakter (
+    K_nev VARCHAR(30) PRIMARY KEY,
+    Guild_nev VARCHAR(30),
+    Felhasznalonev VARCHAR(30) REFERENCES Felhasználó (felhasznalo_nev)
+);
+
+CREATE TABLE Osztály (
+    Osztály_nev VARCHAR(30) PRIMARY KEY,
+    osztaly_kepesseg varchar(30),
+    talent_nev VARCHAR(30),
+    pozicio VARCHAR(30),
+    k_nev varchar(30) references Karakter(K_nev)
+);
+
+CREATE TABLE Faj (
+    Faj_nev VARCHAR(30) PRIMARY KEY,
+    faj_vezeto VARCHAR(30),
+    faji_kepesseg VARCHAR(30),
+    k_nev varchar(30) references Karakter(K_nev)
+);
+
+CREATE TABLE Frakció (
+    frakció_név VARCHAR(30) ,
+    frak_vezető VARCHAR(30),
+    logo VARCHAR(30),
+    k_nev varchar(30) references Karakter(K_nev)
+);

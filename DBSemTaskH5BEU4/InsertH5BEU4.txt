@@ -1,0 +1,37 @@
+insert into Felhasznalo values("Yeagerz210","Kovács Bence","kb210@asd.com",0670312320);
+insert into Felhasznalo values("Empty120","Nagy Béla","nb210@asd.com",0670412320);
+insert into Felhasznalo values("Yklp","Kiss Aladár","ka210@asd.com",0670512320);
+insert into Felhasznalo values("bigpow","Kovács Andor","kand210@asd.com",0670612320);
+insert into Felhasznalo values("Yonamu","Piros István","PI210@asd.com",0670712320);
+
+insert into Karakter values("Kisstank","Guild Affix","Yeagerz210");
+insert into Karakter values("Bigheal","Guild Affix","Yeagerz210");
+insert into Karakter values("bigdpspow","Guilders","Empty120");
+insert into Karakter values("lolzie","Guilders","Empty120");
+insert into Karakter values("wasdqwe","wasd","Empty120");
+insert into Karakter values("memegator","Ambition","bigpow");
+insert into Karakter values("hannover","Ambition","Yonamu");
+
+insert into Osztály values("Mage","ice block","frost","ranged dps","bigdpspow");
+insert into Osztály values("Druid","Roar","Guardian","tank","Kisstank");
+insert into Osztály values("Priest","divine shell","holy","healer","Bigheal");
+insert into Osztály values("Hunter","call pet","beast master","ranged dps","bigdpspow");
+insert into Osztály values("Shaman","heroism","elemental","ranged dps","wasdqwe");
+insert into Osztály values("Warlock","howling abyss","destruction","ranged dps","memegator");
+insert into Osztály values("Monk","touch of karma","windwalker","meele dps","hannover");
+
+insert into Faj values("Orc","Thrall","bloodlust","wasdqwe");
+insert into Faj values("Night elf","Tyrande","hide","hannover");
+insert into Faj values("Tauren","Baine","stomp","Kisstank");
+insert into Faj values("Blood elf","Kaelthas","cleanse","bigdpspow");
+insert into Faj values("goblin","Wezax","rocket jump","Bigheal");
+insert into Faj values("Undead","Lilian","feast","bigdpspow");
+insert into Faj values("Dranei","Velen","gift of naaru","memegator");
+
+insert into Frakció values("Horde","Sylvanas","Félkör","wasdqwe");
+insert into Frakció values("Horde","Sylvanas","Félkör","Kisstank");
+insert into Frakció values("Horde","Sylvanas","Félkör","Bigheal");
+insert into Frakció values("Horde","Sylvanas","Félkör","bigdpspow");
+insert into Frakció values("Horde","Sylvanas","Félkör","wasdqwe");
+insert into Frakció values("Alliance","Anduin","Oroszlán","hannover");
+insert into Frakció values("Alliance","Anduin","Oroszlán","memegator");

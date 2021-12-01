@@ -1,0 +1,31 @@
+1. Kilistázza a Felhasználó tábla elemeit.
+SELECT * FROM Felhasználó;
+
+
+2. Kilistázza a Karakterek táblából a k_név és a Guild_név nevű oszlopokat.
+SELECT k_név, Guild_név FROM Karakter;
+
+
+3. Kilistázza a Frakció táblából azokat a mezőket, ahol nem hordás a karakter.
+SELECT * FROM Frakció WHERE frak_név<>"horde";
+
+4.Kilistázza a meele dps-ek nevét
+SELECT karakter_nev FROM Osztály WHERE pozicio="meele dps";
+
+5.Kilistázza a karaktereket és azok frakciójit
+SELECT Faj.Faj_nev,Frakció.frakció_név FROM Faj Inner JOIN Frakció ON Faj.k_nev=Frakció.k_nev;
+
+6.Megszámolja a hordás karaktereket
+SELECT COUNT(Frakció.frakció_név) FROM Frakció where frakció_név="Horde";
+
+7.Kilistázza a karaktert, annak az osztályát és a faját
+select Karakter.k_nev,Osztály.Osztály_nev,Faj.Faj_nev from Karakter Inner join Osztály ON Osztály.k_nev=Karakter.k_nev Inner join Faj On Faj.k_nev=Karakter.k_nev
+
+8.Kilistázza a játékosok nevét, felhasználónevét és a karakterük(/eik) nevét
+select Felhasznalo.igazi_nev,Felhasznalo.felhasznalo_nev,Karakter.k_nev from Felhasznalo Inner join Karakter On Felhasznalo.felhasznalo_nev=Karakter.felhasznalonev
+
+9.Kilistázza a fajokat, azok különleges képességeit, az osztályokat és azok különleges képességeit
+select Faj.Faj_nev,Faj.faji_kepesseg,Osztály.Osztály_nev,Osztály.osztaly_kepesseg from Faj  Inner join Osztály On Faj.k_nev=Osztály.K_nev
+
+10.Kilistázza a játékos felhasználónevét, igazi nevét, a karakterének a nevét, osztályát,faját és a frakciójának a nevét.
+Select Felhasznalo.felhasznalo_nev,Felhasznalo.igazi_nev,Karakter.k_nev,Osztály.Osztály_nev,Faj.Faj_nev,Frakció.frakció_név from Felhasznalo Inner join Karakter On Felhasznalo.felhasznalo_nev=Karakter.felhasznalonev Inner join Osztály On Osztály.k_nev=Karakter.k_nev Inner join Faj On Faj.k_nev=Karakter.k_nev Inner join Frakció On Frakció.k_nev=Karakter.k_nev where Felhasznalo.felhasznalo_nev="Yeagerz210"

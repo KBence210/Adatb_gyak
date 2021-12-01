@@ -1,0 +1,5 @@
+Felhasználó[Felhasznalo_nev,Név,email_cím,telefonszám]
+Karakter[K_név,Guild_név,felhasznalo_nev]
+Frakció[Frakcio_nev,Frakcio_vezeto,Logo,K_nev]
+Faj[Faj_nev,Faj_vezeto,Faji_kepesseg,K_nev]
+Osztály[Osztály_név,Osztály_képesség,talent_név,pozicio,K_nev]
